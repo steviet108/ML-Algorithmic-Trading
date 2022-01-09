@@ -84,7 +84,7 @@ A few parameters to note for the Baseline strategy are:
 - Data for training the machine learning model was set at 3 months
 - We used a SVM or Support Vector Method for its ability to discriminate between two classes, We wanted to be able to predict 1 or -1
 
-## Results for Baseline
+### Results for Baseline
 
 ![baseline](Resources/pred_strategy_Baseline.png)
 
@@ -100,7 +100,7 @@ A few parameters to note for the Version_2 strategy are:
 - Data for training the machine learning model was set at 6 months
 - We used a SVM or Support Vector Method for its ability to discriminate between two classes, We wanted to be able to predict 1 or -1
 
-## Results for Version_2
+### Results for Version_2
 
 ![Version_2](Resources/pred_strategy_V2.png)
 
@@ -115,7 +115,7 @@ A few parameters to note for the Version_2 strategy are:
 - Data for training the machine learning model was set at 3 months
 - We used a SVM or Support Vector Method for its ability to discriminate between two classes, We wanted to be able to predict 1 or -1
 
-## Results for Version_3
+### Results for Version_3
 
 ![Version_3](Resources/pred_strategy_V3.png)
 
@@ -130,7 +130,7 @@ A few parameters to note for the Version_2 strategy are:
 - Data for training the machine learning model was set at 6 months
 - We used a Logistic Regression Model for its ability to discriminate between binary outcomes, Yes/No, True/False, work well with LR Models.  We wanted to be able to predict 1 or -1, and so my hope was that a LR Model would be able to do this accuratly.
 
-## Results for Logistic Regression Model
+### Results for Logistic Regression Model
 
 ![LR_Model](Resources/pred_strategy_LR_model.png)
 
