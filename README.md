@@ -88,8 +88,10 @@ A few parameters to note for the Baseline strategy are:
 
 ![baseline](Resources/pred_strategy_Baseline.png)
 
+
+
 Here you can see that the Strategy Returns (orange) outperformed the actual returns (blue). The Algorithmic trading bot was profitable and because the machine learning algorithim was able to predict with a decent accuracy of 55%, the future signal and trade accordingly, we were in profit.
----
+
 
 ## Version_2
 For Version_2 I have tried to optimize the machine learning training dataset by extending the training time. Another way to put it is I have increased the amount of data that we let the model train with. The goal was to increase the accuracy of the model so that we could potentially make more money.
@@ -105,7 +107,7 @@ A few parameters to note for the Version_2 strategy are:
 ![Version_2](Resources/pred_strategy_V2.png)
 
 Here you can see that the Strategy Returns (orange) is in even more profit than the Actual Returns (blue), and so by increasing the training set from 3 months of data to 6 months of data, we have increased our profitablility. Awesome. Lets continue to optimize model and see if we can increase the Strategy Returns.
----
+
 
 ## Version_3
 For Version_3 I will keep the training set at 6 months of data and also change the SMA_Slow and SMA_Fast parameters and see what occurs. 
@@ -120,7 +122,7 @@ A few parameters to note for the Version_2 strategy are:
 ![Version_3](Resources/pred_strategy_V3.png)
 
 Here you can see that by adjusting the SMA_Fast and SMA_Slow parameters we have significantly decreased our profitability for the Strategy Returns versus the Actual Returns. 
----
+
 
 ## Logistic Regression Model
 I have also included a Logistic Regression Machine Learning Model to compare how accurate and profitable it was in predicting trading signals. 
@@ -132,7 +134,7 @@ A few parameters to note for the Version_2 strategy are:
 
 ## Results for Logistic Regression Model
 
-![LR_Model](Reources/pred_strategy_LR_model.png)
+![LR_Model](Resources/pred_strategy_LR_model.png)
 
 Here you can see that the Strategy Returns kept up with the Actual Returns for first 2 years, and then in the begining of 2018 the Strategy Returns deviated from the Actual Returns significantly, then came back and mirrored the Actual Returns in profitability for 2020 and 2021. This is interesting and could have been much much worse. All in all I am pleased with the LR Model. It was not ptrofitable but it also didn't loose money so thats a win.
 
