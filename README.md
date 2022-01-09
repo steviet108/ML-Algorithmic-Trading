@@ -71,7 +71,7 @@ MIT
 
 This report will explain and compare the different iterations of machine learning models that were built, trained and then optimized to return the greatest financial gains for the Algorithmic Trading Strategy that I have used.
 
-- Baseline
+## Baseline
 First lets start with a summary of the Baseline model. The signals that I used to initiate a buy is (1) and a sell is (-1). We gave a signal of 1 to Actual Returns when they were equal to or greater than 0, and we gave a -1 to Actual Returns that were less than 0. We define Actual Returns as the percent change in closing price of whatever we are trading.
 Using a rolling mean value with the rolling window set for 4 days gave me the Fast indicator and a rolling window of 100 days gave me a Slow indicator. These two indicators were my SMA indicators or Simple Moving Average indicators. They are the average price over the specified time period. We call them moving because they are plotted on a chart forming a line that moves with the average price change.
 
@@ -87,8 +87,6 @@ A few parameters to note for the Baseline strategy are:
 ## Results for Baseline
 
 ![baseline](Resources/pred_strategy_Baseline.png)
-
-
 
 Here you can see that the Strategy Returns (orange) outperformed the actual returns (blue). The Algorithmic trading bot was profitable and because the machine learning algorithim was able to predict with a decent accuracy of 55%, the future signal and trade accordingly, we were in profit.
 
