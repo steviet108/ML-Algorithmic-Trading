@@ -90,7 +90,7 @@ A few parameters to note for the Baseline strategy are:
 
 Here you can see that the Strategy Returns (orange) outperformed the actual returns (blue). The Algorithmic trading bot was profitable and because the machine learning algorithim was able to predict with a decent accuracy of 55%, the future signal and trade accordingly, we were in profit.
 
-
+---
 ## Version_2
 For Version_2 I have tried to optimize the machine learning training dataset by extending the training time. Another way to put it is I have increased the amount of data that we let the model train with. The goal was to increase the accuracy of the model so that we could potentially make more money.
 In the Baseline we gave the model 3 months of data to train with. In Version_2 we will give the model 6 months of training data and see what that results with.
@@ -106,7 +106,7 @@ A few parameters to note for the Version_2 strategy are:
 
 Here you can see that the Strategy Returns (orange) is in even more profit than the Actual Returns (blue), and so by increasing the training set from 3 months of data to 6 months of data, we have increased our profitablility. Awesome. Lets continue to optimize model and see if we can increase the Strategy Returns.
 
-
+---
 ## Version_3
 For Version_3 I will keep the training set at 6 months of data and also change the SMA_Slow and SMA_Fast parameters and see what occurs. 
 A few parameters to note for the Version_2 strategy are:
@@ -121,7 +121,7 @@ A few parameters to note for the Version_2 strategy are:
 
 Here you can see that by adjusting the SMA_Fast and SMA_Slow parameters we have significantly decreased our profitability for the Strategy Returns versus the Actual Returns. 
 
-
+---
 ## Logistic Regression Model
 I have also included a Logistic Regression Machine Learning Model to compare how accurate and profitable it was in predicting trading signals. 
 A few parameters to note for the Version_2 strategy are:
@@ -136,6 +136,7 @@ A few parameters to note for the Version_2 strategy are:
 
 Here you can see that the Strategy Returns kept up with the Actual Returns for first 2 years, and then in the begining of 2018 the Strategy Returns deviated from the Actual Returns significantly, then came back and mirrored the Actual Returns in profitability for 2020 and 2021. This is interesting and could have been much much worse. All in all I am pleased with the LR Model. It was not ptrofitable but it also didn't loose money so thats a win.
 
+---
 ## Conclusions:
 
 It is clear that with the shorter windows for the SMA_Fast and SMA_Slow we get better results. As seen in the comparison between Version_2 and Version_3. My assumption is that we get a tighter trading strategy. What I mean by that is the price is fluctuating up and down while trending in general directions, and those directions change between up and down. With the SMA_Fast set at 4 days and the SMA_Slow set at 100 days, these parameters give the the machine learning model a closer representaion of actual price. We are using the SMA_Fast and SMA_Slow values as the features for the ML model. The model uses these values to train and predict.
