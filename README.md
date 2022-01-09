@@ -65,6 +65,18 @@ Stephen Thomas
 ## License 
 
 MIT
+---
+
+# Summary Evaluation Report
+
+This report will explain and compare the different iterations of machine learning models that were built, trained and then optimized to return the greatest financial gains for the Algorithmic Trading Strategy that I have used.
+
+First lets start with a summary of the Baseline model. The signals that I used to initiate a buy is (1) and a sell is (-1). Using a rolling mean value with the rolling window set for 4 days gave me the Fast indicator and a rolling window of 100 days gave me a Slow indicator. These two indicators were my SMA indicators or Simple Moving Average indicators. They are the average price over the specified time period. We call them moving because they are plotted on a chart forming a line that moves with the average price change.
+
+![SMA_plot](Resources/SMA_plot.png)
+
+
+
 
 
 
